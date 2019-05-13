@@ -1,5 +1,5 @@
 # Beam Space MIMO
 
-## ULA
+## 1. ULA
 
 https://blog.csdn.net/qq_23947237/article/details/89925088
