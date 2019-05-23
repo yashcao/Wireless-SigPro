@@ -66,3 +66,12 @@ xlabel('user index');
 ylabel('beam index');
 zlabel('Channel gain amplitude');
 %saveas(gcf,'beam_channel.eps', 'psc2');
+
+figure(3);
+colormap('hot');
+imagesc(abs(H_b));
+colorbar;
+set(gca, 'xtick', 1:3:K);
+set(gca, 'ytick', 1:9:N);
+xlabel('user index');
+ylabel('beam index');
