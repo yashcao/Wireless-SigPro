@@ -102,8 +102,8 @@ colorbar;
 % ylim([-0.5, 0.5]);
 set(gca, 'xtick', 1:Nx);
 set(gca, 'ytick', 1:Ny);
-set(gca,'XTickLabel',theta_b1)
-set(gca,'YTickLabel',theta_b2)
+set(gca,'XTickLabel',round(theta_b1, 1));
+set(gca,'YTickLabel',round(theta_b2, 1));
 xlabel('azimuth');
 ylabel('elevation');
 %saveas(gcf,'beam_channel.eps', 'psc2');
