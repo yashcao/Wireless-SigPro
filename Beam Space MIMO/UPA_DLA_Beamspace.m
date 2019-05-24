@@ -100,10 +100,10 @@ imagesc(abs(C_b));
 colorbar;
 % xlim([-0.5, 0.5]);
 % ylim([-0.5, 0.5]);
-% set(gca, 'xtick', theta_b2);
-% set(gca, 'ytick', theta_b1);
-set(gca,'XTickLabel',theta_b2)
-set(gca,'YTickLabel',theta_b1)
+set(gca, 'xtick', 1:Nx);
+set(gca, 'ytick', 1:Ny);
+set(gca,'XTickLabel',theta_b1)
+set(gca,'YTickLabel',theta_b2)
 xlabel('azimuth');
 ylabel('elevation');
 %saveas(gcf,'beam_channel.eps', 'psc2');
