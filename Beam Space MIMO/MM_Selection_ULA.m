@@ -38,6 +38,8 @@ for n=1:N
     a_b = exp(-2*1i*pi*theta_b(n)*((0:N-1)-(N-1)/2))';
     U(:, n) = sqrt(1/N)*a_b;
 end
+U = U';
+
 
 % beamspace channel matrix
 H_b = U*H;
