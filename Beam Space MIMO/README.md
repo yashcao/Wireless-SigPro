@@ -29,4 +29,6 @@ $$\mathbf P_{MF} = \mathbf H$$
 $$\mathbf P_{ZF} = \mathbf H(\mathbf H^{\rm H} \mathbf H)^{-1}$$
 
 - Wiener filter (WF)
-$$\mathbf P_{WF} = (\mathbf H \mathbf H^{\rm H} + \zeta \mathbf I)^{-1}\mathbf H$$
+$$
+\mathbf P_{WF} = (\mathbf H \mathbf H^{\rm H} + \zeta \mathbf I)^{-1}\mathbf H, \zeta=\frac{\tr(\mathbf \Sigma_n)}{\rho}=\frac{\sigma^2 K}{\rho}
+$$
