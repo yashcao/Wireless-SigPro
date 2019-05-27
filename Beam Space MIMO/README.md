@@ -32,9 +32,6 @@ $$
 
 where $\Lambda_s = \mathbb E[\mathbf s \mathbf s^{\rm H}]$ and
 
-
-where 
-
 $$
 \begin{align}
 \mathbb E[\Vert \mathbf x \Vert^2] = \text{tr}(\mathbf G \mathbf \Lambda_s \mathbf G^{\rm H}) 
@@ -43,6 +40,13 @@ $$
 \end{align}
 $$
 
+where
+
+$$
+\begin{align}
+\alpha = \sqrt{\frac{\rho}{\text{tr}(\mathbf P \mathbf \Lambda_s \mathbf P^{\rm H})}}
+\end{align}
+$$
 
 
 ## 1. ULA
