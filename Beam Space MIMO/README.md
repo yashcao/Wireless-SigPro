@@ -13,13 +13,13 @@ where
 
 $$
 \begin{align}
-\mathbf G = \alpha \mathbf F
+\mathbf G = \alpha \mathbf P
 \end{align}
 $$
 
-where $\mathbf F$ is Precoding matrix and $\mathbf x = \mathbf G \mathbf s$.
+where $\mathbf P$ is Precoding matrix and $\mathbf x = \mathbf G \mathbf s$.
 
-The signal power is limited by
+The total transmitted signal power is limited by
 
 $$
 \begin{align}
@@ -29,6 +29,8 @@ $$
 = \text{tr}(\mathbf G \mathbf \Lambda_s \mathbf G^{\rm H}) =\rho
 \end{align}
 $$
+
+where $\Lambda_s = E[\mathbf s \mathbf s^{\rm H}]$.
 
 
 
@@ -79,5 +81,15 @@ $$
 $$
 \begin{align}
 \mathbf P_{WF} = (\mathbf H \mathbf H^{\rm H} + \zeta \mathbf I)^{-1}\mathbf H, \zeta=\frac{\text{tr}(\mathbf \Sigma_n)}{\rho}=\frac{\sigma^2 K}{\rho}
+\end{align}
+$$
+
+where 
+
+$$
+\begin{align}
+\mathbb E[\Vert \mathbf x \Vert^2] = \text{tr}(\mathbf G \mathbf \Lambda_s \mathbf G^{\rm H}) 
+= \alpha^2 \text{tr}(\mathbf P \mathbf \Lambda_s \mathbf P^{\rm H})
+= \rho
 \end{align}
 $$
