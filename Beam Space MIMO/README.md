@@ -4,8 +4,7 @@
 
 $$
 \begin{align}
-\mathbf r &= \mathbf H^{\rm H}\mathbf G \mathbf s + \mathbf n \\
-&= \mathbf H^{\rm H}\mathbf x + \mathbf n
+\mathbf r = \mathbf H^{\rm H}\mathbf G \mathbf s + \mathbf n = \mathbf H^{\rm H}\mathbf x + \mathbf n
 \end{align}
 $$
 
