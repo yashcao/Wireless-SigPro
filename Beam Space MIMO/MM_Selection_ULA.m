@@ -56,10 +56,11 @@ ylabel('beam index');
 IndexSet=[];
 %Index = cell(K, 1);
 for k=1:K
-    eta = 0.5;     % threshhold
+    %eta = 0.5;       % threshhold
+    power_eta = 0.9;  % power retaining threshhold
     %max_k = max(P(:, k));
     sum_k = sum(P(:, k));
-    index_k = [];  % index set
+    index_k = [];     % index set
     [V, I] = sort(P(:, k),'descend');
     v = 0;
     for n=1:N
@@ -67,7 +68,7 @@ for k=1:K
             %index_k = [index_k  n];
         %end
         v = v + V(n);
-        if v >= 0.9*sum_k
+        if v >= power_eta*sum_k
             index_k = I(1:n);
             break;
         end
