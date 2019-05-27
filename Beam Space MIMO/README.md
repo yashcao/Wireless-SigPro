@@ -19,3 +19,14 @@ $$\mathbf a(\theta_a, \theta_e)=\mathbf a_x(\theta_a) \otimes \mathbf a_y(\theta
 <!--
 ![Dirichlet sinc function](https://github.com/yashcao/Wireless-SigPro/blob/master/Beam%20Space%20MIMO/sinc.png)
 -->
+
+
+## 4. Precoding matrix
+- matched filter (MF)
+$$\mathbf P_{MF} = \mathbf H$$
+
+- zero-forcing (ZF)
+$$\mathbf P_{ZF} = \mathbf H(\mathbf H^{\rm H} \mathbf H)^{-1}$$
+
+- Wiener filter (WF)
+$$\mathbf P_{WF} = (\mathbf H \mathbf H^{\rm H} + \epsilon \mathbf I)^{-1}\mathbf H$$
