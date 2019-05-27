@@ -1,5 +1,18 @@
 # Beam Space MIMO
 
+## 0. Signal Model
+
+$$
+\begin{align}
+\mathbf r &= \mathbf H^{\rm H}\mathbf G \mathbf s + \mathbf n \\
+&= \mathbf H^{\rm H}\mathbf x + \mathbf n
+\end{align}
+$$
+
+where $\mathbf x = \mathbf G \mathbf s$
+
+$$\mathbf G = \alpha \mathbf F$$
+
 ## 1. ULA
 
 https://blog.csdn.net/qq_23947237/article/details/89925088
@@ -22,6 +35,8 @@ $$\mathbf a(\theta_a, \theta_e)=\mathbf a_x(\theta_a) \otimes \mathbf a_y(\theta
 
 
 ## 4. Precoding matrix
+
+
 - matched filter (MF)
 $$\mathbf P_{MF} = \mathbf H$$
 
@@ -30,5 +45,5 @@ $$\mathbf P_{ZF} = \mathbf H(\mathbf H^{\rm H} \mathbf H)^{-1}$$
 
 - Wiener filter (WF)
 $$
-\mathbf P_{WF} = (\mathbf H \mathbf H^{\rm H} + \zeta \mathbf I)^{-1}\mathbf H, \zeta=\frac{\tr(\mathbf \Sigma_n)}{\rho}=\frac{\sigma^2 K}{\rho}
+\mathbf P_{WF} = (\mathbf H \mathbf H^{\rm H} + \zeta \mathbf I)^{-1}\mathbf H, \zeta=\frac{\text{tr}(\mathbf \Sigma_n)}{\rho}=\frac{\sigma^2 K}{\rho}
 $$
