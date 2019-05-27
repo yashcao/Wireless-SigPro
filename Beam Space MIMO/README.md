@@ -9,18 +9,29 @@ $$
 \end{align}
 $$
 
-where $\mathbf x = \mathbf G \mathbf s$
+where $\mathbf x = \mathbf G \mathbf s$ and 
 
-$$\mathbf G = \alpha \mathbf F$$
+$$
+\begin{align}
+\mathbf G = \alpha \mathbf F
+\end{align}
+$$
+
+where $\mathbf F$ is Precoding matrix.
 
 ## 1. ULA
 
-https://blog.csdn.net/qq_23947237/article/details/89925088
+please refer to:
+<https://blog.csdn.net/qq_23947237/article/details/89925088>
 
 
 ## 2. UPA
 
-$$\mathbf a(\theta_a, \theta_e)=\mathbf a_x(\theta_a) \otimes \mathbf a_y(\theta_e)$$
+$$
+\begin{align}
+\mathbf a(\theta_a, \theta_e)=\mathbf a_x(\theta_a) \otimes \mathbf a_y(\theta_e)
+\end{align}
+$$
 
 
 ## 3. Dirichlet sinc function
@@ -38,12 +49,22 @@ $$\mathbf a(\theta_a, \theta_e)=\mathbf a_x(\theta_a) \otimes \mathbf a_y(\theta
 
 
 - matched filter (MF)
-$$\mathbf P_{MF} = \mathbf H$$
+$$
+\begin{align}
+\mathbf P_{MF} = \mathbf H
+\end{align}
+$$
 
 - zero-forcing (ZF)
-$$\mathbf P_{ZF} = \mathbf H(\mathbf H^{\rm H} \mathbf H)^{-1}$$
+$$
+\begin{align}
+\mathbf P_{ZF} = \mathbf H(\mathbf H^{\rm H} \mathbf H)^{-1}
+\end{align}
+$$
 
 - Wiener filter (WF)
 $$
+\begin{align}
 \mathbf P_{WF} = (\mathbf H \mathbf H^{\rm H} + \zeta \mathbf I)^{-1}\mathbf H, \zeta=\frac{\text{tr}(\mathbf \Sigma_n)}{\rho}=\frac{\sigma^2 K}{\rho}
+\end{align}
 $$
