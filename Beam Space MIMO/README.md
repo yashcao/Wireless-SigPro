@@ -12,4 +12,6 @@ $$\mathbf a(\theta_a, \theta_e)=\mathbf a_x(\theta_a) \otimes \mathbf a_y(\theta
 
 ## 3. Dirichlet sinc function
 
+<center>
 ![Dirichlet sinc function](https://github.com/yashcao/Wireless-SigPro/blob/master/Beam%20Space%20MIMO/sinc.png)
+</center>
