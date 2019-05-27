@@ -22,12 +22,12 @@ where $\mathbf F$ is Precoding matrix and $\mathbf x = \mathbf G \mathbf s$.
 The signal power is limited by
 
 $$
-\begin{align}
+\begin{aligned}
 \mathbb E[\Vert \mathbf x \Vert^2] &= \mathbb E[\mathbf x^{\rm H} \mathbf x] \\
 &= \text{tr}(\mathbb E[\mathbf x^{\rm H} \mathbf x]) = \text{tr}(\mathbb E[\mathbf x \mathbf x^{\rm H}]) \\
 &= \text{tr}(\mathbf G \mathbb E[\mathbf s \mathbf s^{\rm H}] \mathbf G^{\rm H}) \\
 &= \text{tr}(\mathbf G \mathbf \Lambda_s \mathbf G^{\rm H}) =\rho
-\end{align}
+\end{aligned}
 $$
 
 
