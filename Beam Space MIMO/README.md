@@ -98,3 +98,6 @@ $$
 \end{align}
 $$
 
+## Evaluation
+
+- sum capacity (spectral efficiency)
