@@ -58,11 +58,13 @@ for n=1:Nx
     b_aa = exp(-2*1i*pi*theta_b1(n)*((0:Nx-1)-(Nx-1)/2))';
     U_a(:, n) = sqrt(1/Nx)*b_aa;
 end
+U_a = U_a';
 
 for n=1:Ny
     b_ae = exp(-2*1i*pi*theta_b2(n)*((0:Ny-1)-(Ny-1)/2))';
     U_e(:, n) = sqrt(1/Ny)*b_ae;
 end
+U_e = U_e';
 
 % beamspace channel matrix
 U = kron(U_a, U_e);
