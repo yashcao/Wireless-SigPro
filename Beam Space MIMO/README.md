@@ -100,4 +100,6 @@ $$
 
 ## Evaluation
 
-- sum capacity (spectral efficiency)
+- sum capacity (spectral efficiency/achievable sum-rate)
+
+$$C=\sum_{i=1}^{K} \log_2(1+SINR_i)
