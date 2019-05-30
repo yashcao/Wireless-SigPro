@@ -109,3 +109,18 @@ set(gca,'YTickLabel',round(theta_b2, 1));
 xlabel('azimuth');
 ylabel('elevation');
 %saveas(gcf,'beam_channel.eps', 'psc2');
+
+
+figure(5);
+b = bar3(abs(C_b));
+% xlim([1,Nx]);
+% ylim([1,Ny]);
+% set(gca, 'xtick', 1:3:Nx);
+% set(gca, 'ytick', 1:3:Ny);
+colorbar;
+% color in height
+for k = 1:length(b)
+    zdata = b(k).ZData;
+    b(k).CData = zdata;
+    b(k).FaceColor = 'interp';
+end
